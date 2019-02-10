@@ -1,0 +1,2 @@
+# midtermProject
+Daniel Lagos Portfolio
