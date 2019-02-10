@@ -1,0 +1,17 @@
+@import'gotham'
+
+$background: #3E3F40 ;
+$hFont: Gotham medium, sans-serif ;
+$mColor:#33428C;
+$pFont:Gotham, sans-serif;
+
+body{
+    background-color: $background;
+    font-family:$pFont ;
+    color: $mColor;
+    h1{
+        font-family: 100% $hFont;       
+    }
+}
+
+
