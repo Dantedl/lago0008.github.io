@@ -9,21 +9,17 @@ body {
   body h1 {
     font-family: 100% Gotham medium, sans-serif; }
 
-.menu.flex ul {
+.container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly; }
-  .menu.flex ul li {
-    list-style: none outside none; }
-    .menu.flex ul li a {
-      font-size: 2em;
-      width: 100%;
-      display: flex; }
-
-.flex.welcome h1 {
-  text-align: center; }
+  flex-direction: column;
+  width: 100%; }
+  .container .container2 .menu .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+  .container .container2 .welcome {
+    text-align: center; }
 
 footer {
   text-align: center;
   background-color: white; }
-  
