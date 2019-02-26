@@ -1,6 +1,29 @@
+@font-face {
+  font-family: "Gotham";
+  src: url("fonts/Gotham.eot?") format("eot"), url("fonts/Gotham.woff2") format("woff2"), url("fonts/Gotham.woff") format("woff"), url("fonts/Gotham.ttf") format("truetype"), url('fonts/Gotham.svg#str-replace(Gotham, " ", "_")') format("svg"); }
+
 body {
   background-color: #3E3F40;
   font-family: Gotham, sans-serif;
-  color: #33428C; }
+  color: #2f4ff0; }
   body h1 {
     font-family: 100% Gotham medium, sans-serif; }
+
+.menu.flex ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+  .menu.flex ul li {
+    list-style: none outside none; }
+    .menu.flex ul li a {
+      font-size: 2em;
+      width: 100%;
+      display: flex; }
+
+.flex.welcome h1 {
+  text-align: center; }
+
+footer {
+  text-align: center;
+  background-color: white; }
+  

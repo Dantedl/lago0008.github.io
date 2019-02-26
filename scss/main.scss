@@ -1,17 +1,73 @@
-@import'gotham'
+//mixin for font
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+	$src: null;
 
-$background: #3E3F40 ;
+	$extmods: (
+		eot: "?",
+		svg: "#" + str-replace($name, " ", "_")
+	);
+
+	$formats: (
+		otf: "opentype",
+		ttf: "truetype"
+	);
+
+	@each $ext in $exts {
+		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+	}
+
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		src: $src;
+	}
+}
+@include font-face(Gotham, fonts/Gotham);
+//variables
+$bgColor:#3E3F40 ;
 $hFont: Gotham medium, sans-serif ;
-$mColor:#33428C;
+$mColor:rgb(47, 79, 240);
 $pFont:Gotham, sans-serif;
-
+//styling 
+//body-----------------------------
 body{
-    background-color: $background;
+    background-color: $bgColor;
     font-family:$pFont ;
     color: $mColor;
     h1{
-        font-family: 100% $hFont;       
+		font-family: 100% $hFont;
+
     }
 }
+.menu.flex{
+ul{
+	display: flex;
+	flex-direction:row;
+	// width:100%;
+	justify-content: space-evenly;
+	li{list-style: none outside none;
+		a{
+			font-size: 2em;
+			width:100%;
+			display: flex;
+	
+		}
+	}
+}	
+}
+.flex.welcome{
+	h1{
+	text-align: center;
+	}
+	
+}
+//footer----------
+footer{
+	text-align: center;
+	background-color: white;
+	
 
-
+}
