@@ -19,6 +19,14 @@ body {
     justify-content: space-evenly; }
   .container .container2 .welcome {
     text-align: center; }
+  .container .container3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .container .container3 .content {
+      width: 50%; }
+      .container .container3 .content picture {
+        justify-content: flex-start; }
 
 footer {
   text-align: center;
