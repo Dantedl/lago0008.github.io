@@ -106,10 +106,8 @@ body{
 				width:90%;
 			}
 		}		
+	}
 }
-
-}
- 
 	.container5{
 		padding: 30px;
 		iframe{
@@ -117,13 +115,12 @@ body{
 		height: 555px;
 		}
 	}
-
-
 .container2{
 	.welcome{
 		text-align: center;
-		padding: 25px;
 		font-size: 4rem;
+		margin: 100px;
+		margin-top: 0;
 		color:$bColor;
 	}
 	.menu{
@@ -133,6 +130,7 @@ body{
 			flex-direction: row;
 			justify-content: space-around;
 			background-color: lightgray;
+			margin-bottom: 100px;
 		}
 	}	
 
@@ -142,6 +140,7 @@ body{
 	.diamond-grid{
 		width: 70%;
 		margin: 150px auto 0;
+		margin-top: 0;
 		}
 	.item{
 		widows: 250px;
@@ -160,12 +159,12 @@ body{
 		transform: translateY(-50%) scale(1.2);
 		width:100%;
 	}
-
-
 //footer----------
 footer{
 	text-align: center;
 	background-color: white;
+	margin-top: 100px;
 	p{
 		color:$bColor;
-	}}
+	}
+}
