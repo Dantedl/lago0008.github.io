@@ -3,7 +3,7 @@
   src: url("fonts/Gotham.eot?") format("eot"), url("fonts/Gotham.woff2") format("woff2"), url("fonts/Gotham.woff") format("woff"), url("fonts/Gotham.ttf") format("truetype"), url('fonts/Gotham.svg#str-replace(Gotham, " ", "_")') format("svg"); }
 
 body {
-  background-color: #3E3F40;
+  background-color: black;
   font-family: Gotham, sans-serif;
   width: 100%;
   margin: 0 auto; }
