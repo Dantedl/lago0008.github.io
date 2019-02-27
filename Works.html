@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/diamonds.css" />
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
   
 </head>
 <body>
-    <div class="container">
+    <div class="container2">
             <div class="menu flex">
-                    <ul class="nav justify-content-center">
+                    <ul class="nav ">
                         <li class="nav-item">
-                          <a class="nav-link active" href="./index.html">Index</a>
+                          <a class="nav-link active" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="./About.html">About</a>
@@ -26,13 +26,53 @@
                           <a class="nav-link" href="./contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link disabled" href="./Works.html" tabindex="-1" aria-disabled="true">Works</a>
+                          <a class="nav-link" href="./Works.html">Works</a>
                         </li>
                       </ul>
                 
                 
                 </div>
     </div>
-    
+    <div class="container">
+<div class="diamond-grid">
+<!-- items for grid -->
+<div class="item"> <a href="./images/SamplePictures-14.jpg" target="_blank" ><img src="./images/SamplePictures-14.jpg" alt=""> </a> </div>
+<div class="item"> <a href="./images/SamplePictures-15.jpg" target="_blank" ><img src="./images/SamplePictures-15.jpg" alt=""> </a> </div>
+<div class="item"> <a href="./images/SamplePictures-5.jpg" target="_blank" ><img src="./images/SamplePictures-5.jpg" alt=""> </a> </div>
+<div class="item"> <a href="./images/artistic shots-2.jpg" target="_blank" ><img src="./images/artistic shots-2.jpg" alt=""> </a> </div>
+<div class="item"> <a href="./images/artistic shots.jpg" target="_blank" ><img src="./images/artistic shots.jpg" alt=""> </a> </div>
+<div class="item"> <a href="./images/poster.jpg" target="_blank" ><img src="./images/poster.jpg" alt=""> </a> </div>
+<div class="item"> <a href="http://lago0008.edumedia.ca/mtm6231/assg01/" target="_blank" ><img src="./images/website.PNG" alt=""> </a> </div>
+<div class="item"> <a href="http://lago0008.edumedia.ca/mtm6231/final/" target="_blank" ><img src="./images/website2.PNG" alt=""> </a> </div>
+<div class="item"> <a href="http://lago0008.edumedia.ca/mtm6231/assg03/" target="_blank" ><img src="./images/website3.PNG" alt=""> </a> </div>
+<div class="item"> <a href="./images/bethel_-49.jpg" target="_blank" ><img src="./images/bethel_-49.jpg" alt=""> </a> </div>
+<div class="item"> <a href="./images/salty-69.jpg" target="_blank" ><img src="./images/salty-69.jpg" alt=""> </a> </div>
+<div class="item"> <a href="./images/salty-81.jpg" target="_blank" ><img src="./images/salty-81.jpg" alt=""> </a> </div>
+<div class="item"> <a href="./images/bethel bbq-41.jpg" target="_blank" ><img src="./images/bethel bbq-41.jpg" alt=""> </a> </div>
+
+
+
+
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="./jquery.diamonds.js"></script>
+<script type="text/javascript">
+    $(".diamond-grid").diamonds({
+        size : 250, // Size of diamonds in pixels. Both width and height. 
+        gap : 5, // Pixels between each square.
+        hideIncompleteRow : false, // Hide last row if there are not enough items to fill it completely.
+        autoRedraw : true, // Auto redraw diamonds when it detects resizing.
+        itemSelector : ".item" // the css selector to use to select diamonds-items.
+    });
+ </script>
+
+</div>
+<footer>
+    <p class="ft">All media was made or legally purchased by Daniel</p>
+
+</footer>
 </body>
 </html>
