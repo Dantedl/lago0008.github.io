@@ -1,8 +1,39 @@
+/* font file */
 @font-face {
   font-family: "Gotham";
   src: url("fonts/Gotham.eot?") format("eot"), url("fonts/Gotham.woff2") format("woff2"), url("fonts/Gotham.woff") format("woff"), url("fonts/Gotham.ttf") format("truetype"), url('fonts/Gotham.svg#str-replace(Gotham, " ", "_")') format("svg"); }
 
-body {
+body{
+  background: rgb(38,38,38)
+}
+/* fonts settings */
+body h1{
+  color: rgb( 41, 158, 244);
+}
+body h2{
+  color: rgb( 7, 95, 158);
+}body h3{
+  color: rgb( 226, 211, 107);
+}
+body h4{
+  color: rgb( 255, 255, 255);
+}
+/* code from we school */
+.parallax {
+  /* The image used */
+  background-image: url("img_parallax.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* body {
   background-color: black;
   font-family: Gotham, sans-serif;
   width: 100%;
@@ -105,4 +136,4 @@ footer {
   background-color: white;
   margin-top: 100px; }
   footer p {
-    color: #2f4ff0; }
+    color: #2f4ff0; } */
