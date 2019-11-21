@@ -1,34 +1,72 @@
+$font-family-sans-serif:
+  // Safari for OS X and iOS (San Francisco)
+  -apple-system,
+  // Chrome < 56 for OS X (San Francisco)
+  BlinkMacSystemFont,
+  // Windows
+  "Segoe UI",
+  // Android
+  "Roboto",
+  // Basic web fallback
+  "Helvetica Neue", Arial, sans-serif,
+  // Emoji fonts
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
 /* font file */
 @font-face {
   font-family: "Gotham";
-  src: url("fonts/Gotham.eot?") format("eot"), url("fonts/Gotham.woff2") format("woff2"), url("fonts/Gotham.woff") format("woff"), url("fonts/Gotham.ttf") format("truetype"), url('fonts/Gotham.svg#str-replace(Gotham, " ", "_")') format("svg"); }
+  src: url("fonts/Gotham.eot?") format("eot"), url("fonts/Gotham.woff2") format("woff2"), url("fonts/Gotham.woff") format("woff"), url("fonts/Gotham.ttf") format("truetype"), url('fonts/Gotham.svg#str-replace(Gotham, " ", "_")') format("svg");
+}
 
-body{
-  background: rgb(38,38,38)
+body {
+  background: rgb(38, 38, 38)
 }
+
 /* fonts settings */
-body h1{
-  color: rgb( 41, 158, 244);
+body h1 {
+  font-family: gotham;
+
+  color: rgb(41, 158, 244);
 }
-body h2{
-  color: rgb( 7, 95, 158);
-}body h3{
-  color: rgb( 226, 211, 107);
+
+body h2 {
+  font-family: "gotham", bold, sans-serif;
+  font-size: 3em;
+  
+  color: rgb(7, 95, 158);
 }
-body h4{
-  color: rgb( 255, 255, 255);
+
+body h3 {
+  color: rgb(226, 211, 107);
 }
+
+body h4 {
+  color: rgb(255, 255, 255);
+}
+body p {
+  font-family: gotham;
+  color: rgb(255, 255, 255);
+}
+
 /* code from we school */
-body, html {
+body,
+html {
   height: 100%;
 }
 
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+.text-center{
+  text-align: center;
+}
 .parallax {
   /* The image used */
-  background-image: url('img_parallax.jpg');
+  background-image: url('../');
 
   /* Full height */
-  height: 100%; 
+  height: 100%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -36,11 +74,21 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.filler{
+
+.filler {
   background-color: white;
-  height:35%;
+  height: 35%;
   width: 100%;
 }
+
+.logo{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* navbar code from stack overflow
+ */
 
 /* body {
   background-color: black;
