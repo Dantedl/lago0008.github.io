@@ -9,11 +9,13 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- main css -->
+  <!-- main css -->
   <link rel="stylesheet" href="/css/main.css">
 
   <!-- script?? -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+  <script src="./main.js"></script>
   <title>DL portfolio</title>
 </head>
 
@@ -32,8 +34,7 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-       
-          <li><a href="#">Page 3</a></li>
+
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="./index.html">Home</a></li>
@@ -46,14 +47,14 @@
   <!-- end of navbar -->
 
 
-
+  <!-- Sample code for parallax -->
   <section class="container-fluid parallax flex-center">
     <section class="container ">
-      <div class="row flex-center">
-        <div class="col-md-6">
-          <h2 class="text-center">Who I am?</h2>
+      <div class="row flex-center paper-back ">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <h2 id="fi-left" class="text-center ">Who I am?</h2>
         </div>
-        <div class="col-md-6">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
           <p>I am a passionate and cheerful developer who is looking for his next challenge. As a college graduate, I am
             ready to take on the next challenge.</p>
         </div>
@@ -61,28 +62,44 @@
 
     </section>
   </section>
-
+  <!-- sample code for filler -->
   <section class="container-fluid filler">
     <section class="container">
-
-
-
     </section>
   </section>
 
   <section class="container-fluid  parallax flex-center">
     <section class="container  ">
-      <div class="row ">
-        <div class="col-md-6 ">
-          <h2>What I do?</h2>
+      <div class="row  flex-center  paper-back">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 ">
+          <h2 id="fi-left" class="text-center">What I do?</h2>
         </div>
         <div class="col-md-6">
           <p>I am a full stack media developer who likes build websites that will suit my clients needs.</p>
         </div>
       </div>
-
     </section>
   </section>
+  <!-- filler -->
+  <section class="container-fluid filler">
+    <section class="container">
+    </section>
+  </section>
+  <!-- Parallax -->
+  <section class="container-fluid parallax flex-center">
+    <section class="container ">
+      <div class="row flex-center paper-back ">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <h2 class="text-center ">A bit about me</h2>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <p>I came to Canada when I was 16 years old from Palmira, Colombia. I've always had a passion for music and
+            gaming. Also, I am a cat father.</p>
+        </div>
+      </div>
+    </section>
+  </section>
+
 
 
 
@@ -100,6 +117,11 @@
   </script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#fi-left").fadeIn();
+    });
   </script>
 </body>
 

@@ -1,97 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- main css -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/contactForm.css">
+
+  <!-- script?? -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="./main.js"></script>
+  <title>DL portfolio</title>
 </head>
+
 <body>
-  <div class="container2">
-    <div class="menu">
-        <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./About.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="./Works.html">Works</a>
-            </li>
-          </ul>
-    </div>
-  </div>
-    <div class="container">
-     
-        <!-- code from code w3school -->
+  <!-- nav bar from bootstrap -->
 
-       <div class="container4">
-         <div class="content a1">
-                <form action="action_page.php" class="form">
-              
-                  <label for="fname">First Name</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Your name">
-              
-                  <label for="lname">Last Name</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name">
-              
-                  <label for="country">Country</label>
-                  <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                  </select>
-              
-                  <label for="subject">Subject</label>
-                  <textarea class="textarea" id="subject" name="subject" placeholder="" style="height:200px"></textarea>
-              
-                  <input type="submit" value="Submit">
-                </form>
-         </div>
-         <div class="content b1">
-           <h1>Business Hours</h1>
-            <table class="table">
-                <thead class="thead-dark">
-                  <tr>
-                    <th scope="col">Days</th>
-                    <th scope="col">Hours</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                      <th scope="row">Monday-friday</th>
-                    <td>7am to 5pm</td>
-                    
-                  </tr>
-        </tbody>
-        <tbody>
-            <tr>
-                <th scope="row">Saturday</th>
-              <td>7am to 1pm</td>
-            </tr>
-  </tbody>
-        </table>
-         </div>
-       </div>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle logo" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">DL</a>
       </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
 
-<div class="container5 ">
-<div class="map">  
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9968511892985!2d-75.75688573449435!3d45.3488758290998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin+College!5e0!3m2!1sen!2sca!4v1551210974081" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
-</div>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="./index.html">Home</a></li>
+          <li><a href="Works.html">Showcase</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end of navbar -->
 
-    <footer>
-        <p class="ft">All media was made or legally purchased by Daniel</p>
-    
-    </footer>
+
+  <!-- Sample code for parallax -->
+  <section class="container-fluid parallax flex-center">
+    <section class="container ">
+      <div class="row flex-center paper-back ">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <main class="contact">
+            <h2 class="text-center">Let's talk</h2>
+            <form action="contact.form.php" method="POST"></form>
+            <input type="text" name="Subject" placeholder="Full name">
+            <input type="text" name="Mail" placeholder="Your email">
+            <textarea name="message" placeholder="message"></textarea>
+            <button type="submit" name="submit">Submit</button>
+          </main>
+        </div>
+
+      </div>
+    </section>
+  </section>
+
+
+
+
+
+
+
 </body>
+
 </html>

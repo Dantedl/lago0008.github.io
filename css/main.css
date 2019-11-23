@@ -1,16 +1,19 @@
-$font-family-sans-serif:
-  // Safari for OS X and iOS (San Francisco)
-  -apple-system,
-  // Chrome < 56 for OS X (San Francisco)
-  BlinkMacSystemFont,
-  // Windows
-  "Segoe UI",
-  // Android
-  "Roboto",
-  // Basic web fallback
-  "Helvetica Neue", Arial, sans-serif,
-  // Emoji fonts
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-sans-serif: // Safari for OS X and iOS (San Francisco)
+-apple-system,
+// Chrome < 56 for OS X (San Francisco)
+BlinkMacSystemFont,
+// Windows
+"Segoe UI",
+// Android
+"Roboto",
+// Basic web fallback
+"Helvetica Neue",
+Arial,
+sans-serif,
+// Emoji fonts
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol" !default;
 
 /* font file */
 @font-face {
@@ -32,7 +35,8 @@ body h1 {
 body h2 {
   font-family: "gotham", bold, sans-serif;
   font-size: 3em;
-  
+  margin-bottom: 0 !important;
+
   color: rgb(7, 95, 158);
 }
 
@@ -43,9 +47,11 @@ body h3 {
 body h4 {
   color: rgb(255, 255, 255);
 }
+
 body p {
   font-family: gotham;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  margin-bottom: 0 !important;
 }
 
 /* code from we school */
@@ -58,12 +64,15 @@ html {
   display: flex;
   align-items: center;
 }
-.text-center{
+
+.text-center {
   text-align: center;
 }
+
 .parallax {
   /* The image used */
-  background-image: url('../');
+  background-image: url('../images/IMG_0557\ \(2019_11_21\ 07_47_46\ UTC\).jpg');
+
 
   /* Full height */
   height: 100%;
@@ -81,16 +90,23 @@ html {
   width: 100%;
 }
 
-.logo{
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-}
+.paper-back {
+  background-color: white;
+  border-radius: 20px 0px 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
-/* navbar code from stack overflow
+}
+  .logo {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  /* navbar code from stack overflow
  */
 
-/* body {
+  /* body {
   background-color: black;
   font-family: Gotham, sans-serif;
   width: 100%;
