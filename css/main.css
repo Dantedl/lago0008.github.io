@@ -25,29 +25,39 @@ body {
 /* fonts settings */
 body h1 {
   font-family: "gotham", bold, sans-serif;
-
   color: rgb(41, 158, 244);
+  font-size: 4.6em;
 }
 
 body h2 {
   font-family: "gotham", bold, sans-serif;
-  font-size: 3em;
+  font-size: 3.6em;
   margin-bottom: 0 !important;
   color: rgb(7, 95, 158);
 }
 
 body h3 {
+  font-family: "gotham", bold, sans-serif;
   color: rgb(226, 211, 107);
+  margin-bottom: 0 !important;
+
 }
 
 body h4 {
   color: rgb(255, 255, 255);
 }
 
+body h6{
+  color: rgb(41, 158, 244);
+  font-size: 1.3em;
+  font-family: "gotham", book, sans-serif;
+
+}
 body p {
   font-family: gotham;
   color: rgb(0, 0, 0);
   margin-bottom: 0 !important;
+  font-size: 1.3em;
 }
 
 /* code from we school */
@@ -55,7 +65,11 @@ body,
 html {
   height: 100%;
 }
+.flex{
+display: flex;
+flex-direction: column;
 
+}
 .flex-center {
   display: flex;
   align-items: center;
@@ -64,7 +78,7 @@ html {
 .text-center {
   text-align: center;
 }
-
+/* original parallax */
 .parallax {
   /* The image used */
   background-image: url('../images/IMG_0557\ \(2019_11_21\ 07_47_46\ UTC\).jpg');
@@ -76,12 +90,33 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.filler {
-  background-color: white;
-  height: 35%;
-  width: 100%;
+.parallax-b {
+  /* The image used */
+  background-image: url('../images/poster.jpg');
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}.parallax-c {
+  /* The image used */
+  background-image: url('../images/whatDo.PNG');
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+/* .filler {
+  background-color: white;
+  height: 2%;
+  width: 100%;
+} */
 
 .paper-back {
   background-color: white;
@@ -90,14 +125,181 @@ html {
   padding-bottom: 40px;
 
 }
+.paper-back-b {
+  background-color: white;
+  border-radius: 20px 20px ;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
-.logo {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
 }
 
+.logo {
+  width: 1000px;
+  height: 20px;
+  cursor: pointer;
+ 
 
+}
+a {
+  width: 100%;
+  color: #000;
+}
+.favicon{
+  width: 45px;
+  height: 26px;
+}
+.logo-font{
+  font-size: 0.7em !important;
+  float: right;
+  margin-top: 10px;
+}
+/* header */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position:absolute;
+  width: 100%;
+  z-index: 3;
+
+}
+.resume{
+width: 100%;
+
+
+
+}
+.margin{
+margin: 20px;
+}
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  width: auto;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  margin: 30px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+/* .resume{
+  margin: 10px;
+  width: 100%;
+  height: auto;
+} */
 /* navbar code from stack overflow
  */
 

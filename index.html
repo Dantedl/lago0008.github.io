@@ -22,32 +22,25 @@
 <body>
   <!-- nav bar from bootstrap -->
 
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle logo" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">DL</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
+  <header class="header">
+      <a href="/index.html" class="logo">
+          <img  class="favicon" src="/images/logo.png" alt="">
+          <p class="logo-font">Daniel Lagos</p>
+      </a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/Showcase.html">Showcase</a></li>
+        <li><a href="/resume.html">Resume</a></li>
+      </ul>
+    </header>
 
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="./index.html">Home</a></li>
-          <li><a href="./Showcase.html">Showcase</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
   <!-- end of navbar -->
 
  <!-- Sample code for parallax -->
- <section class="container-fluid parallax flex-center">
+ <section class="container-fluid parallax flex-center" data-speed="-1">
     <section class="container ">
       <div class="row flex-center paper-back ">
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -65,9 +58,9 @@
     </section>
   </section>
   <!-- Sample code for parallax -->
-  <section class="container-fluid parallax flex-center">
+  <section class="container-fluid parallax-b flex-center">
     <section class="container ">
-      <div class="row flex-center paper-back ">
+      <div class="row flex-center paper-back-b ">
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
           <h2 id="fi-left" class="text-center ">Who I am?</h2>
         </div>
@@ -84,9 +77,9 @@
     </section>
   </section>
 
-  <section class="container-fluid  parallax flex-center">
+  <section class="container-fluid  parallax-c flex-center">
     <section class="container  ">
-      <div class="row  flex-center  paper-back">
+      <div class="row  flex-center  paper-back-b">
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 ">
           <h2 id="fi-left" class="text-center">What I do?</h2>
         </div>
@@ -104,7 +97,7 @@
   <!-- Parallax -->
   <section class="container-fluid parallax flex-center">
     <section class="container ">
-      <div class="row flex-center paper-back ">
+      <div class="row flex-center paper-back-b ">
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
           <h2 class="text-center ">A bit about me</h2>
         </div>

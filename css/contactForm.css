@@ -1,19 +1,19 @@
 .container{
-    width: 50%;
+    width: 40%;
 }
 .contact {
     display: flex;
     flex-direction: column;
     margin: 2.5%;
 }
-
+.parallax{
+    background-image: none !important;
+}
 button,
 input {
     border: 0;
     border-bottom: 1px solid blue;
     padding: 1.5%;
-
-    /* textinput font settings */
     font-family: "gotham", medium, sans-serif;
 }
 
@@ -33,7 +33,14 @@ textarea {
     border-top:0px;
     border-right:0;
 
-    /* textarea font settings */
+    
     color:rgb(41,158,244);
     font-family: "gotham", book, sans-serif;
+}
+#form_container
+{
+	padding:15px 15px;
+	margin-top:15px;
+    background: rgba(255,255,255);	
+    border-radius: 25px 20px;
 }
