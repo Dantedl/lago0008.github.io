@@ -44,3 +44,9 @@ textarea {
     background: rgba(255,255,255);	
     border-radius: 25px 20px;
 }
+body h2 {
+    font-family: "gotham", bold, sans-serif;
+    font-size: 3.6em;
+    margin-bottom: 0 !important;
+    color: rgb(7, 95, 158);
+  }
