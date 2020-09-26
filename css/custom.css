@@ -1,0 +1,13 @@
+.no-bull li {
+  list-style: none;
+  text-align: left;
+}
+.flex-justified {
+  display: flex;
+  justify-content: space-evenly;
+}
+.button-jq {
+  background-color: none;
+  background: none;
+  border: none;
+}

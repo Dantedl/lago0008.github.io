@@ -1,139 +1,279 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <!-- main css -->
-  <link rel="stylesheet" href="./css/main.css">
-
-  <!-- script?? -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-  <script src="./main.js"></script>
-  <title>DL portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Daniel Lagos Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet">
 </head>
 
-<body>
-  <!-- nav bar from bootstrap -->
-
-  <header class="header">
-      <a href="./index.html" class="logo">
-          <img  class="favicon" src="./images/logo.png" alt="">
-          <p class="logo-font">Daniel Lagos</p>
-      </a>
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-      <ul class="menu">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-        <li><a href="./Showcase.html">Showcase</a></li>
-        <li><a href="./resume.html">Resume</a></li>
-      </ul>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Clients</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signup">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container d-flex h-100 align-items-center">
+            <div class="mx-auto text-center">
+                <h1 class="mx-auto my-0 text-uppercase">Hey there!</h1>
+                <h2 class="text-white-50 mx-auto mt-2 mb-5"> You've found me!
+                </h2>
+                <a class="btn btn-primary js-scroll-trigger" href="#about">learn more about me!
+                </a>
+            </div>
+        </div>
     </header>
+    <!-- About-->
+    <section class="about-section text-center" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-white mb-4">Multimedia Developer</h2>
+                    <h3 class="text-white-50 mx-auto mt-2 mb-5"> with great passion for the web!</h3>
+                    <p class="text-white-50 text-justify">
 
-  <!-- end of navbar -->
-
- <!-- Sample code for parallax -->
- <section class="container-fluid parallax flex-center" data-speed="-1">
-    <section class="container ">
-      <div class="row flex-center paper-back ">
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <h1 id="fi-left" class="text-center ">Hey there, you've found me!</h1>
+                        I am the young professional that you are looking for! <br>
+                        I spent 2 years learning the basics of web development, along with side other media skills, in
+                        order to become one of the greatest students from my class. My skills, in addition to my rapid
+                        learning and my charisma, had allowed me to reach multiple opportunities in the past 3 years.
+                    </p>
+                </div>
+            </div>
+            <img class="img-fluid" src="assets/img/ipad.png" alt="" />
         </div>
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <p></p>
-        </div>
-      </div>
     </section>
-  </section>
-  <!-- sample code for filler -->
-  <section class="container-fluid filler">
-    <section class="container">
-    </section>
-  </section>
-  <!-- Sample code for parallax -->
-  <section class="container-fluid parallax-b flex-center">
-    <section class="container ">
-      <div class="row flex-center paper-back-b ">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-          <h2 id="fi-left" class="text-center ">Who I am?</h2>
+
+    <!-- Skills -->
+
+    <section class="skill-section bg-light">
+        <div class="container">
+            <div class="row flex-justified">
+                <div class="col-lg-12">
+                    <h2 class="text-center">Skill Tree</h2>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Languages</h5>
+                            <ul class="no-bull">
+                                <li>HTML 5</li>
+                                <li>(S)CSS 3</li>
+                                <li>Javascript</li>
+                                <li>jquery</li>
+                                <li>Bootstrap 3 & 4</li>
+                                <li>PHP</li>
+                                <li>SVG</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Software for media</h5>
+                            <ul class="no-bull">
+                                <li> <button class="button-jq" data-button="JQbutton1">Adobe Creative Cloud</button>
+                                    <ul id="data-info">
+                                        <li>Photoshop</li>
+                                        <li>Illustrator</li>
+                                        <li>InDesign</li>
+                                        <li>After FX</li>
+                                        <li>Premiere Pro</li>
+                                    </ul>
+                                </li>
+                                <li>Adove Captivate</li>
+                                <li>Storylinw 360</li>
+                                <li>Microsoft Office</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Personal Skills</h5>
+                            <ul class="no-bull">
+                                <li>Business comunication oriented
+                                </li>
+                                <li>Web Accesibility(WCAG 2.0 & 2.1)</li>
+                                <li>User Expirience oriented </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-          <p>I am a passionate and cheerful developer who is looking for his next challenge. As a college graduate, I am
-            ready to take on the next challenge.</p>
-        </div>
-      </div>
     </section>
-  </section>
-  <!-- sample code for filler -->
-  <section class="container-fluid filler">
-    <section class="container">
-    </section>
-  </section>
 
-  <section class="container-fluid  parallax-c flex-center">
-    <section class="container  ">
-      <div class="row  flex-center  paper-back-b">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 ">
-          <h2 id="fi-left" class="text-center">What I do?</h2>
+    <!-- Projects-->
+    <section class="projects-section bg-light" id="projects">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <h2 class="text-center">Clients</h2>
+                </div>
+            </div>
+            <!-- Featured Project Row-->
+            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg"
+                        alt="" /></div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text text-center text-lg-left">
+                        <h4>PopTiKR</h4>
+                        <h5>Lead UX Developer & researcher</h5>
+                        <p class="text-black-50 mb-0"> </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Project One Row-->
+            <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="" /></div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">ESDC</h4>
+                                <h5> GT 03</h5>
+                                <p class="mb-0 text-white-50">An example of where you can put an image of a project, or
+                                    anything else, along with a description.</p>
+                                <hr class="d-none d-lg-block mb-0 ml-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Two Row-->
+            <div class="row justify-content-center no-gutters">
+                <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="" /></div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="text-white">ECCC</h4>
+                                <h5>GT 05</h5>
+                                <p class="mb-0 text-white-50">Another example of a project with its respective
+                                    description. These sections work well responsively as well, try this theme on a
+                                    small screen!</p>
+                                <hr class="d-none d-lg-block mb-0 mr-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-6">
-          <p>I am a full stack media developer who likes build websites that will suit my clients needs.</p>
-        </div>
-      </div>
     </section>
-  </section>
-  <!-- filler -->
-  <section class="container-fluid filler">
-    <section class="container">
-    </section>
-  </section>
-  <!-- Parallax -->
-  <section class="container-fluid parallax flex-center">
-    <section class="container ">
-      <div class="row flex-center paper-back-b ">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-          <h2 class="text-center ">A bit about me</h2>
+    <!-- Signup-->
+    <section class="signup-section" id="signup">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto text-center">
+                    <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                    <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+                    <form class="form-inline d-flex">
+                        <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email"
+                            placeholder="Enter email address..." />
+                        <button class="btn btn-primary mx-auto" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-          <p>I came to Canada when I was 16 years old from Palmira, Colombia. I've always had a passion for music and
-            gaming. Also, I am a cat father.</p>
-        </div>
-      </div>
     </section>
-  </section>
+    <!-- Contact-->
+    <section class="contact-section bg-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Ottawa-Gatineau</h4>
+                            <hr class="my-4" />
+                            <div class="small text-black-50"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-envelope text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Email</h4>
+                            <hr class="my-4" />
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Phone</h4>
+                            <hr class="my-4" />
+                            <div class="small text-black-50">+1 (555) 902-8832</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social d-flex justify-content-center">
+                <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer bg-black small text-center text-white-50">
+        <div class="container">Copyright © Your Website 2020</div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
 
 
-
-
-
-
-
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-  </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-  </script>
-  <script>
-    $(document).ready(function () {
-      $("#fi-left").fadeIn();
-    });
-  </script>
+    <!-- custom js -->
+    <script src="/js/CustomQuery.js"></script>
 </body>
+
 </html>
-
-
-
