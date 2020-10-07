@@ -1,0 +1,123 @@
+:root {
+  primary: #ff583d !important;
+  secondary: #fefbe2;
+  third: #00fffe;
+  background1: #08080d;
+  background2: #ffffff;
+}
+/* nav bar */
+
+#mainNav.navbar-shrink .nav-link.active {
+  color: #ff3314 !important;
+  border-bottom: 0.25rem solid #ff3b14;
+}
+#mainNav.navbar-shrink .nav-link:hover {
+  color: #ff583d !important;
+}
+
+#mainNav .nav-override.active {
+  color: #ff3314 !important;
+  border-bottom: 0.25rem solid #ff3b14;
+}
+#mainNav .nav-override :hover {
+  color: #ff583d !important;
+}
+
+/* list no style */
+
+.no-bull li {
+  list-style: none;
+  text-align: left;
+}
+.flex-justified {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button-jq {
+  background-color: none;
+  background: none;
+  border: none;
+}
+.svg-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.diaplay-none {
+  display: none;
+}
+/* CARD */
+/* .card-img-top {
+  margin-top: 8%;
+} */
+.skill-section .card {
+  border-bottom-color: #ff3314 !important;
+}
+
+.contact-section .card {
+  border: 0;
+  border-bottom: 0.25rem solid #ff3314;
+}
+.masthead h1 {
+  background: linear-gradient(rgba(255, 88, 61, 1), rgba(166, 56, 46, 0.5));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.masthead h2 {
+  color: #fefbe2 !important;
+  font-weight: bold;
+}
+/* Icon button */
+.button-icon {
+  margin-top: 6%;
+  margin-bottom: 6%;
+}
+/* clients */
+.projects-section .featured-text {
+  border-left-color: #ff3314 !important;
+}
+/* buttons */
+button:focus {
+  outline: 0px auto -webkit-focus-ring-color;
+}
+.btn-primary {
+  color: white;
+  background-color: #ff583d;
+  font-weight: bold;
+  /* text-shadow: black 1px 1px 1px; */
+}
+.btn-primary:hover {
+  background-color: #ff3314;
+
+  /* text-shadow: black 1px 1px 1px; */
+}
+/* FONTS  */
+.tittle-font {
+  font-family: 'Varela Round', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  text-transform: uppercase !important;
+}
+/* TEXT COLOR */
+.text-yellgrey {
+  color: #fefbe2;
+}
+.text-orange {
+  color: #ff583d;
+}
+/* .bg-cyan {
+  color: #00fffe;
+} */
+/* BACKGROUND COLORS */
+.bg-orange {
+  color: #ff583d;
+}
+.text-primary {
+  color: #ff3314 !important;
+}
+.contact-section .card hr {
+  border-color: #ff583d !important;
+  border-width: 0.25rem;
+  width: 3rem;
+}

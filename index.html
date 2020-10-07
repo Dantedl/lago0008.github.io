@@ -1,139 +1,309 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Daniel Lagos Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <!-- main css -->
-  <link rel="stylesheet" href="./css/main.css">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet">
 
-  <!-- script?? -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-  <script src="./main.js"></script>
-  <title>DL portfolio</title>
 </head>
 
-<body>
-  <!-- nav bar from bootstrap -->
-
-  <header class="header">
-      <a href="./index.html" class="logo">
-          <img  class="favicon" src="./images/logo.png" alt="">
-          <p class="logo-font">Daniel Lagos</p>
-      </a>
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-      <ul class="menu">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-        <li><a href="./Showcase.html">Showcase</a></li>
-        <li><a href="./resume.html">Resume</a></li>
-      </ul>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger nav-override" href="#page-top">Home</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Clients</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signup">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container d-flex h-100 align-items-center">
+            <div class="mx-auto text-center" data-aos="fade-down">
+                <h1 class="mx-auto my-0 text-uppercase" data-aos="">Hey there!</h1>
+                <h2 class="text-white-50 mx-auto mt-2 mb-5"> You've found me!
+                </h2>
+                <a class="btn btn-primary js-scroll-trigger" href="#about">learn more about me!
+                </a>
+            </div>
+        </div>
     </header>
-
-  <!-- end of navbar -->
-
- <!-- Sample code for parallax -->
- <section class="container-fluid parallax flex-center" data-speed="-1">
-    <section class="container ">
-      <div class="row flex-center paper-back ">
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <h1 id="fi-left" class="text-center ">Hey there, you've found me!</h1>
+    <!-- About-->
+    <section class="about-section text-center" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" data-aos="fade-right">
+                    <h2 class="text-orange mb-4 tittle-font">Multimedia Developer</h2>
+                    <h3 class="text-yellgrey mx-auto mt-2 mb-5"> with great passion for the web development!</h3>
+                    <p class="text-white-50 text-justify">
+                        I am the young professional that you are looking for! <br>
+                        I spent 2 years learning the basics of web development, along with side other media skills, in
+                        order to become one of the greatest students from my class. My skills, in addition to my rapid
+                        learning and my charisma, had allowed me to reach multiple opportunities in the past 3 years.
+                    </p>
+                </div>
+            </div>
+            <img class="img-fluid" src="assets/img/ipad.png" data-aos="fade-up" alt="" />
         </div>
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <p></p>
-        </div>
-      </div>
     </section>
-  </section>
-  <!-- sample code for filler -->
-  <section class="container-fluid filler">
-    <section class="container">
-    </section>
-  </section>
-  <!-- Sample code for parallax -->
-  <section class="container-fluid parallax-b flex-center">
-    <section class="container ">
-      <div class="row flex-center paper-back-b ">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-          <h2 id="fi-left" class="text-center ">Who I am?</h2>
+    <!-- Skills -->
+    <section class="skill-section bg-light">
+        <div class="container">
+            <div class="row flex-justified">
+                <div class="col-lg-12">
+                    <h2 class="text-center tittle-font text-orange" data-aos="fade-down">Skill Tree</h2>
+                </div>
+                <div class="col-lg-3" data-aos="zoom-out">
+                    <div class="card" style="width: 18rem;">
+                        <button class="button-jq button-icon" data-button="JQbutton2">
+                            <svg viewBox="0 0 16 16" class="bi bi-globe card-img-top bg-orange svg-icon"
+                                fill="currentColor " xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4H2.255a7.025 7.025 0 0 1 3.072-2.472 6.7 6.7 0 0 0-.597.933c-.247.464-.462.98-.64 1.539zm-.582 3.5h-2.49c.062-.89.291-1.733.656-2.5H3.82a13.652 13.652 0 0 0-.312 2.5zM4.847 5H7.5v2.5H4.51A12.5 12.5 0 0 1 4.846 5zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5H7.5V11H4.847a12.5 12.5 0 0 1-.338-2.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12H7.5v2.923c-.67-.204-1.335-.82-1.887-1.855A7.97 7.97 0 0 1 5.145 12zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11H1.674a6.958 6.958 0 0 1-.656-2.5h2.49c.03.877.138 1.718.312 2.5zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12h2.355a7.967 7.967 0 0 1-.468 1.068c-.552 1.035-1.218 1.65-1.887 1.855V12zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5h-2.49A13.65 13.65 0 0 0 12.18 5h2.146c.365.767.594 1.61.656 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4H8.5V1.077c.67.204 1.335.82 1.887 1.855.173.324.33.682.468 1.068z" />
+                            </svg></button>
+                        <div class="card-body diaplay-none" id="JQbutton2">
+                            <h5 class="card-title">Languages</h5>
+                            <ul class="no-bull">
+                                <li>HTML 5</li>
+                                <li>(S)CSS 3</li>
+                                <li>Javascript</li>
+                                <li>JQuery</li>
+                                <li>Bootstrap 3 & 4</li>
+                                <li>PHP</li>
+                                <li>SVG</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3" data-aos="zoom-out">
+                    <div class="card" style="width: 18rem;">
+                        <button class="button-jq  button-icon" data-button="JQbutton3">
+                            <svg viewBox="0 0 16 16" class="bi bi-code card-img-top bg-orange svg-icon"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.854 4.146a.5.5 0 0 1 0 .708L2.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm4.292 0a.5.5 0 0 0 0 .708L13.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
+                            </svg> </button>
+                        <div class="card-body diaplay-none" id="JQbutton3">
+                            <h5 class="card-title">Software for media</h5>
+                            <ul class="no-bull">
+                                <li> <button class="button-jq" data-button="JQbutton1">Adobe Creative Cloud</button>
+                                    <ul id="JQbutton1" style="display: none;">
+                                        <li>Photoshop</li>
+                                        <li>Illustrator</li>
+                                        <li>InDesign</li>
+                                        <li>After FX</li>
+                                        <li>Premiere Pro</li>
+                                    </ul>
+                                </li>
+                                <li>Adove Captivate</li>
+                                <li>Storylinw 360</li>
+                                <li>Microsoft Office</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-3" data-aos="zoom-out">
+                    <div class="card" style="width: 18rem;">
+                        <button class="button-jq  button-icon" data-button="JQbutton4">
+                            <svg viewBox="0 0 16 16" class="bi bi-tools card-img-top bg-orange svg-icon"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M0 1l1-1 3.081 2.2a1 1 0 0 1 .419.815v.07a1 1 0 0 0 .293.708L10.5 9.5l.914-.305a1 1 0 0 1 1.023.242l3.356 3.356a1 1 0 0 1 0 1.414l-1.586 1.586a1 1 0 0 1-1.414 0l-3.356-3.356a1 1 0 0 1-.242-1.023L9.5 10.5 3.793 4.793a1 1 0 0 0-.707-.293h-.071a1 1 0 0 1-.814-.419L0 1zm11.354 9.646a.5.5 0 0 0-.708.708l3 3a.5.5 0 0 0 .708-.708l-3-3z" />
+                                <path fill-rule="evenodd"
+                                    d="M15.898 2.223a3.003 3.003 0 0 1-3.679 3.674L5.878 12.15a3 3 0 1 1-2.027-2.027l6.252-6.341A3 3 0 0 1 13.778.1l-2.142 2.142L12 4l1.757.364 2.141-2.141zm-13.37 9.019L3.001 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z" />
+                            </svg></button>
+                        <div class="card-body diaplay-none" id="JQbutton4">
+                            <h5 class="card-title">Personal Skills</h5>
+                            <ul class="no-bull">
+                                <li>Business comunication oriented
+                                </li>
+                                <li>Web Accesibility(WCAG 2.0 & 2.1)</li>
+                                <li>User Expirience oriented </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-          <p>I am a passionate and cheerful developer who is looking for his next challenge. As a college graduate, I am
-            ready to take on the next challenge.</p>
-        </div>
-      </div>
     </section>
-  </section>
-  <!-- sample code for filler -->
-  <section class="container-fluid filler">
-    <section class="container">
-    </section>
-  </section>
+    <!-- Projects-->
+    <section class="projects-section bg-light" id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="text-center tittle-font text-orange" data-aos="fade-down">Clients</h2>
+                </div>
+            </div>
+            <!-- Featured Project Row-->
+            <div class="row align-items-center no-gutters mb-4 mb-lg-5" data-aos="fade-right" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
 
-  <section class="container-fluid  parallax-c flex-center">
-    <section class="container  ">
-      <div class="row  flex-center  paper-back-b">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 ">
-          <h2 id="fi-left" class="text-center">What I do?</h2>
+                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0 client-logo"
+                        src="assets/img/PopTikRLogo.png" alt="" /></div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text text-center text-lg-left">
+                        <h5>Lead UX Developer & researcher</h5>
+                        <p class="text-black-50 mb-0"> Researched and developed a functional prototype for an online
+                            Dashboard. The goal was to examine the platform for then Organize and create a prototype
+                            using Adobe XD. Other Work requests with the client included UX & design feedback for other
+                            builds within her platform and branding. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center no-gutters mb-4 mb-lg-5" data-aos="fade-left" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+                <div class=" col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0 client-logo"
+                        src="assets/img/ESDCLogo.png" alt="" /></div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text text-center text-lg-left">
+                        <h5>GT 03</h5>
+                        <p class="text-black-50 mb-0"> Developed & updated online courses, based on HTML, SNAP or Adapt
+                            frameworks, for the ESDC in the Canadian Government. As well as, generating and adjusting
+                            media for the web courses. The software used to do all of these was the adobe creative suite
+                            and Adobe Captivate. Lastly, In my current term, the web accessibility was heavily
+                            influinced to develop with better practices. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center no-gutters mb-4 mb-lg-5" data-aos="fade-up" data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0 client-logo"
+                        src="assets/img/ecccLogo.png" alt="" /></div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text text-center text-lg-left">
+                        <h5>GT 04</h5>
+                        <p class="text-black-50 mb-0"> Self-taught new software for e-learning like Articulate Storyline
+                            360 to create beautiful and smooth e-courses. The e-learning courses could contain from
+                            plain text to questionnaires and stunning designs. Other duties consisted of administrating
+                            an LMS(Learning Management System) content and users. </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Project One Row-->
+            <!-- <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                <div class="col-lg-6"><img class="img-fluid" src="assets/img/ESDCLogo.png" alt="" /></div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">ESDC</h4>
+                                <h5> GT 03</h5>
+                                <p class="mb-0 text-white-50">An example of where you can put an image of a project, or
+                                    anything else, along with a description.</p>
+                                <hr class="d-none d-lg-block mb-0 ml-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </div>
-        <div class="col-md-6">
-          <p>I am a full stack media developer who likes build websites that will suit my clients needs.</p>
-        </div>
-      </div>
     </section>
-  </section>
-  <!-- filler -->
-  <section class="container-fluid filler">
-    <section class="container">
-    </section>
-  </section>
-  <!-- Parallax -->
-  <section class="container-fluid parallax flex-center">
-    <section class="container ">
-      <div class="row flex-center paper-back-b ">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-          <h2 class="text-center ">A bit about me</h2>
+    <!-- Signup-->
+    <section class="signup-section" id="signup">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto text-center" data-aos="zoom-out">
+                    <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                    <h2 class="text-white mb-5">Send me an email!</h2>
+                    <form class="form-inline d-flex">
+                        <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email"
+                            placeholder="Enter email address..." />
+                        <button class="btn btn-primary mx-auto" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-          <p>I came to Canada when I was 16 years old from Palmira, Colombia. I've always had a passion for music and
-            gaming. Also, I am a cat father.</p>
-        </div>
-      </div>
     </section>
-  </section>
+    <!-- Contact-->
+    <section class="contact-section bg-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0" data-aos="zoom-out-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Ottawa-Gatineau</h4>
+                            <hr class="my-4" />
+                            <div class="small text-black-50"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0" data-aos="zoom-out-up" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-envelope text-primary mb-2 "></i>
+                            <h4 class="text-uppercase m-0">Email</h4>
+                            <hr class="my-4" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0" data-aos="zoom-out-left" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt text-primary mb-2 bg-orange"></i>
+                            <h4 class="text-uppercase m-0">Phone</h4>
+                            <hr class="my-4" />
+                            <div class="small text-black-50"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social d-flex justify-content-center">
+                <a class="mx-2" href="#!"><i class="fab fa-twitter text-primary"></i></a>
+                <a class="mx-2" href="#!"><i class="fab fa-facebook-f text-primary"></i></a>
+                <a class="mx-2" href="#!"><i class="fab fa-github text-primary"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer bg-black small text-center text-white-50">
+        <div class="container">Copyright © Your Website 2020</div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- Animation -->
 
-
-
-
-
-
-
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-  </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-  </script>
-  <script>
-    $(document).ready(function () {
-      $("#fi-left").fadeIn();
-    });
-  </script>
+    <!-- custom js -->
+    <script src="/js/CustomQuery.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
-
-
-
