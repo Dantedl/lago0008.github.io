@@ -8,6 +8,6 @@ document.getElementsByTagName('head')[0].appendChild(script);
 $(document).ready(function () {
   $('.button-jq').on('click', function () {
     let Jbutton = $(this).attr('data-button');
-    $('#' + Jbutton).toggle();
+    $('#' + Jbutton).slideToggle('900', function () {});
   });
 });
