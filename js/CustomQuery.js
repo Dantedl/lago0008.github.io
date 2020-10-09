@@ -10,4 +10,13 @@ $(document).ready(function () {
     let Jbutton = $(this).attr('data-button');
     $('#' + Jbutton).slideToggle('900', function () {});
   });
+
+  // button hover
+  $('.card').hover(function () {
+    // alert(this);
+    // $(this).addClass('hoverB');
+
+    $(this).toggleClass('hoverB');
+  });
+  // end of jquery file
 });

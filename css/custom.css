@@ -121,3 +121,9 @@ button:focus {
   border-width: 0.25rem;
   width: 3rem;
 }
+/* Hover button */
+.hoverB {
+  background-color: #ff3314;
+  opacity: 0.4;
+  transform: scale(1.1);
+}
