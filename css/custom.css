@@ -89,8 +89,19 @@ button:focus {
 }
 .btn-primary:hover {
   background-color: #ff3314;
-
-  /* text-shadow: black 1px 1px 1px; */
+}
+.btn .btn-primary:visited {
+  background-color: white !important;
+}
+.btn-primary:focus {
+  background-color: #ff3314 !important;
+}
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #ff3314 !important;
+  border-color: #ff3314 !important;
 }
 /* FONTS  */
 .tittle-font {
@@ -120,4 +131,11 @@ button:focus {
   border-color: #ff583d !important;
   border-width: 0.25rem;
   width: 3rem;
+}
+
+/* hover effect */
+.hover-color {
+  background-color: #ff3314;
+  opacity: 0.5;
+  transform: scale(10%);
 }
